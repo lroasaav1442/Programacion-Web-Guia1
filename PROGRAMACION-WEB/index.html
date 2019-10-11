@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reversing Engineering</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="diseños.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
+</head>
+<body>
+    <!-- Menu de navegacion -->
+
+    <header>
+            <nav class="navegacion">
+                    <ul class="menu">
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Contenido</a>
+                                        <ul class="submenu">
+                                            
+                                                <li><a href="#tema1">Pasos involucrados en la ingeniería inversa</a>
+                                                </li>
+                                                <li><a href="#tema2">Mejores herramientas de ingeniería inversa</a>
+                                                </li> 
+                                                  </ul> 
+                                       
+
+                                      
+                                                 </li>
+
+                                        <li><a href="Oropuro.html">Oro puro</a></li>
+                                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+            </nav>
+    </header>
+
+        <!-- Diapositivas -->
+        <section>
+            <img class="COPI" src="imagenes/operationRE.jpg" width="480" height="560"
+            style="width:100%">
+            <img class="COPI" src="imagenes/desarrollo-de-software-min.jpg"  width="480" height="560"
+            style="width:100%">
+            <img class="COPI" src="imagenes/better-software-2.jpg" width="480" height="560"
+            style="width:100%">
+            <img class="COPI" src="imagenes/450_1000.png" width="580" height="460"
+            style="width:100%">
+            <img class="COPI" src= "imagenes/tecnologia-en-desarrollo-de-software.jpg"width="480" height="560"
+            style="width:100%">
+        </section>
+
+        <script>
+            // Presentación de diapositivas automática: cambie la imagen cada 3 segundos
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("COPI");
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 3000);
+            }
+            </script>
+            
+ 
+    <!-- Contenido pagina web -->
+    <h2 class="titulo"></br> ¿Qué es la ingeniería inversa? 
+        </h2>
+    <p align="justify" > </br> La ingeniería es la profesión involucrada en el diseño, fabricación, construcción y mantenimiento de productos, sistemas y estructuras. En un nivel superior, hay dos tipos de ingeniería: ingeniería avanzada e ingeniería inversa. </br>  </br>La ingeniería avanzada es el proceso tradicional de pasar de abstracciones de alto nivel y diseños lógicos a la implementación física de un sistema. En algunas situaciones, puede haber una parte física sin ningún detalle técnico, como dibujos, listas de materiales o sin datos de ingeniería, como propiedades térmicas y eléctricas. </p> 
+
+    <p align="justify" > </p>
+
+    <p align="justify">El proceso de duplicar un componente, subconjunto o producto existente sin la ayuda de dibujos, documentación o modelo de computadora se conoce como ingeniería inversa. La ingeniería inversa puede verse como el proceso de análisis de un sistema para:</br> </br><b> 1. </b> Identificar los componentes del sistema y sus interrelaciones.  </br></br><b> 2.</b> Cree representaciones del sistema en otra forma o en un nivel superior de abstracción.</br></br><b>  3.</b> Crear la representación física de ese sistema.</br> </br>La ingeniería inversa es muy común en campos tan diversos como ingeniería de software, entretenimiento, automotriz, productos de consumo, microchips, productos químicos, electrónica y diseños mecánicos. Por ejemplo, cuando una nueva máquina llega al mercado, los fabricantes de la competencia pueden comprar una máquina y desarmarla para saber cómo se construyó y cómo funciona. Una compañía química puede usar ingeniería inversa para vencer una patente en el proceso de fabricación de un competidor. En ingeniería civil, los diseños de puentes y edificios se copian de éxitos pasados, por lo que habrá menos posibilidades de fallas catastróficas. En ingeniería de software, un buen código fuente es a menudo una variación de otro buen código fuente.      </p></br>
+
+    <p align="justify"> </p>
+    <p align="justify">
+        </br>
+    </p>
+    
+    <!-- Imagenes -->
+    <img  src="imagenes/0_jyH3Q0LotVHSsRdA.jpg" alt="Imagen De Referencia" width="480" height="360"  ></br>
+
+
+         <!-- Enlace a una parte concreto de la página -->
+               <a name="tema1"></a>
+    <h2 class="titulo">Pasos involucrados en la ingeniería inversa</h2>
+
+    <p align="justify">La ingeniería inversa es exactamente lo que parece. En ingeniería avanzada, tiene una idea para una parte y construye los modelos. Luego produce la pieza utilizando esos modelos.
+    </p>
+
+    <h2 class="titulo1">
+            Paso 1: Capturar Datos
+
+    </h2>
+    <p align="justify">
+            El primer paso en la ingeniería inversa de una parte es capturar los datos de la parte existente. Dependiendo del material y el tamaño de la pieza o instalación, se puede utilizar una variedad de diferentes equipos de escaneo.
+
+            Utilizamos una variedad de tecnología para capturar datos, incluidos nuestros brazos Faro totalmente móviles y nuestro escáner láser Faro.
+    </p>
+
+    <h2 class="titulo1">
+            Paso 2: Refina El Modelo
+
+    </h2 class="titulo">
+        <p></br>
+                Ahora que tiene las dimensiones detalladas de la parte de los archivos escaneados, se pueden refinar en una parte final. Este proceso varía según el programa de software que se utiliza.
+
+                Es una combinación del uso de tecnología automatizada dentro del software y la manipulación humana para completar el modelo.
+                
+                Convierten la nube de puntos o la malla que recibió del escáner en un modelo poligonal. La malla resultante se limpia, alisa y esculpe para retener su forma y precisión requeridas.</br>
+        </p>
+    <h2 class="titulo1">
+    </br>Paso 3: Fabricación</br>
+
+    </h2>
+    <p align="justify">
+    </br>Ahora que el modelo está completo, está listo para ser fabricado. Dependiendo del tamaño de la pieza y la aplicación, puede optar por hacer una impresión del modelo para compararlo.
+    </p>
+
+        <!-- Enlace a una parte concreto de la página -->
+           <a name="tema2"></a>
+    <h2 class="titulo">Mejores herramientas de ingeniería inversa
+        
+        
+    </h2>
+
+    <P align="justify"></br>
+        Hay tantas aplicaciones de software diferentes en el mundo moderno, y el código fuente de la mayoría de ellas está oculto a nuestra vista. Pero hay una serie de situaciones, cuando necesitamos comprender la lógica del funcionamiento de las plataformas y aplicaciones, sus algoritmos y detalles. Es entonces cuando se  activa la reversión legal del software. 
+    </P>
+    <P align="justify"></br>
+        Hay muchos productos para facilitar esta tarea. Vamos a discutir algunos de los mejores programas de ingeniería inversa; principalmente serán herramientas de ingeniería inversa para Windows. 
+    </P>
+
+    <H2 class="titulo">
+        Aplicaciones para ingeniería inversa de software
+
+    </H2>
+
+    <p align="justify"></br>
+        Es difícil nombrar la mejor herramienta de ingeniería inversa de software: hay bastantes y cada una resuelve alguna tarea específica del proceso de inversión de varios pasos.   
+    </p>
+
+    <h2 class="titulo1">
+        1. IDA-Pro, Rayos Hex.
+
+    </h2>
+
+    <p align="justify">IDA Pro debe ser una de las mejores herramientas de ingeniería inversa. Es un desensamblador interactivo, que se usa ampliamente para la reversión de software. Tiene el lenguaje de comando incorporado ( IDC ), admite varios formatos ejecutables para una variedad de procesadores y sistemas operativos. También tiene una gran cantidad de complementos que permiten ampliar aún más la funcionalidad del desensamblador.</p>
+
+    <!-- Imagen -->
+    <img src="imagenes/pc1.gif" alt="Ida Pro"  width="680" height="460">
+
+
+    <h2 class="titulo1">
+        2. CFF Explorer
+    </h2>
+    <p  align="justify"></br>
+        CFF Explorer incluye:
+
+        Editores PE y HEX
+        Editor de recursos
+        Editor de importación
+        Escáner de firma
+        Convertidor de direcciones
+        Desensamblador
+        Analizador de dependencia
+        y más.
+    </p>
+
+    <img src="imagenes/Explorer-Suite-CFF-Explorer.png" alt=" CFF Explorer"  width="680" height="460">
+
+    <h2 class="titulo1">
+        3. Monitor de API
+
+    </h2>
+
+    <p align="justify"></br>
+        API Monitor es una aplicación que intercepta llamadas a funciones de API. Puede mostrar datos de entrada y salida. Por defecto, hay 10,000 funciones API y más de 600 interfaces COM habilitadas.
+
+
+    </p>
+     <img src="imagenes/main_window.jpg" alt="Monitor de API"  width="680" height="460" >
+
+
+    </div>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <h1 class="titulo">Universidad EAN 2019</h1>
+        <a href="https://universidadean.edu.co/">
+        <img class="" src="imagenes/Ean-Logo.jpg" alt="" width="300px ">
+    </a>
+    </footer>
+
+
+</body>
+</html>
